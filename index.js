@@ -1,17 +1,18 @@
 const express = require("express");
 const { createPool } = require("mysql2");
 const cors = require("cors");
-const generateGitFile = require('giv-gitignore');
+const generateGitFile = require("giv-gitignore");
 
 const app = express();
 const PORT = 3000;
 generateGitFile();
 
 const pool = createPool({
-  host: "localhost",
-  user: "root",
-  password: "1234",
-  database: "todos",
+  host: "mysql.railway.internal",      
+  user: "root",      
+  password: "xaNiNpMXvYNGeQzHOMAvFxURHYVcJfEf",    
+  database: "railway",
+  port: 3306,              
   connectionLimit: 10,
 });
 
