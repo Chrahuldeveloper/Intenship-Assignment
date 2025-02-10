@@ -11,7 +11,7 @@ const pool = createPool({
   host: "mysql.railway.internal",      
   user: "root",      
   password: "xaNiNpMXvYNGeQzHOMAvFxURHYVcJfEf",    
-  database: "railway",
+  database: "todos",
   port: 3306,              
   connectionLimit: 10,
 });
